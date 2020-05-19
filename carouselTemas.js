@@ -45,7 +45,7 @@ var carouselTemas  = function(id,datos){
             this.btnAnt.addEventListener("click", function(e){
                 e.preventDefault();
                 e.stopPropagation();
-                alert("Antes")
+                _this.moverScrolll("prev");
             }, false);
             
             this.btnSig = this.btnAnt.cloneNode(false);
@@ -59,7 +59,7 @@ var carouselTemas  = function(id,datos){
             this.btnSig.addEventListener("click", function (e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    alert("Siguiente")
+                    _this.moverScrolll("next");
             }, false);
         
         this.divOpciones = this.div.cloneNode(false);
